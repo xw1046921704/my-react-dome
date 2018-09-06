@@ -1,0 +1,14 @@
+/* pages/record/record.wxss */
+@import "../index/index.wxss";
+
+.weui-navbar {
+  background-color: #fff;
+}
+
+.weui-navbar__slider {
+  width: 30px;
+}
+
+.weui-navbars {  
+  font-size: 13px; 
+}

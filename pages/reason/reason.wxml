@@ -1,0 +1,11 @@
+<!--pages/reason/reason.wxml-->
+<import src="../grids/grids.wxml" />
+<view class="page">
+  <view class="container">
+    <view class="weui-grids">
+      <view class="weui-grid" wx:for="{{routers}}" wx:key="name">
+        <template is="grids" data="{{...item}}"></template>
+      </view>
+    </view>
+  </view>
+</view>

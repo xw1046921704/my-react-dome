@@ -1,0 +1,22 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/login/login",
+    "pages/entry/entry",
+    "pages/work/work",
+    "pages/record/record",
+    "pages/help/help",
+    "pages/grids/grids",
+    "pages/list/list",
+    "pages/reason/reason",
+    "pages/added/added",
+    "pages/evaluate/evaluate"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#000",
+    "navigationBarTitleText": "KCCM",
+    "navigationBarTextStyle":"#FFF"
+  }
+}

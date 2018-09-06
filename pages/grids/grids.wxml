@@ -1,0 +1,9 @@
+<!--pages/template/grids/grids.wxml-->
+<template name="grids">
+  <navigator url="{{url}}" bindtap='gridtap'>
+    <view class="weui-grid__icon">
+      <image src=" {{icon}}" mode="scaleToFill" class='imagSize' />
+    </view>
+    <text class="weui-grid__label">{{name}}</text>
+  </navigator>
+</template>

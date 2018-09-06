@@ -1,0 +1,87 @@
+<view class="page">
+  <view class="page__hd">
+    <view class="weui-panel weui-panel_access">
+      <view class="weui-media-box weui-media-box_appmsg">
+        <view class="weui-media-box__hd weui-media-box__hd_in-appmsg">
+          <image class="weui-media-box__thumb" src="{{logs.icon}}" />
+        </view>
+        <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
+          <view class="weui-media-box__title">{{logs.name}}</view>
+          <view class="weui-media-box__desc" style='color: #000;'>{{logs.phone}}</view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class='page__bd'>
+    <view class="weui-cells weui-cells_after-title" style='margin-top:10px'>
+      <view class="weui-cell">
+        <view class="weui-cell__bd">维修人员</view>
+        <view class="weui-cell__ft">周大佬</view>
+      </view>
+      <view class="weui-cell">
+        <view class="weui-cell__bd">联系电话</view>
+        <view style="display: inline-block;vertical-align:middle; font-size: 17px;color:#999">07****1</view>
+        <text class="iconfont icon-weibiaoti-" hover-class="weui-cell_active" style="font-size:25px;color:red;margin-left:15px;"></text>
+      </view>
+      <view class="weui-cell weui-cell_access">
+        <view class="weui-cell__bd">维修用时</view>
+        <view class="weui-cell__ft" style="font-size: 0">
+          <view style="display: inline-block;vertical-align:middle; font-size: 17px;">120/min</view>
+        </view>
+      </view>
+    </view>
+    <view class="weui-cells__title">评价说明</view>
+    <view class="weui-cells weui-cells_after-title">
+      <view class="weui-cell">
+        <view class="weui-cell__bd">
+          <textarea class="weui-textarea" placeholder="" style="height: 3.3em" />
+          <view class="weui-textarea-counter">
+            <image src='../../imag/拍照.png' class='icon' style='padding-right:15px;'></image>
+            <image src='../../imag/麦克风.png' class='icon'></image>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view>
+    <!--星星评价-->
+    <view class="weui-panel_access">
+      <view class="weui-cells__title">请对本次服务进行评价</view>
+    </view>
+    <view class='weui-panel s'>
+      <view class="comment1-description" style="display:flex;flex-direction:row;">
+        <view class="comment1-description1">维修质量</view>
+        <view class="star-pos" style="display:flex;flex-direction:row;">
+          <view class="starsM iconfont icon-weibiaoti-  {{flag2>=1? '': 'hideStar'}}" bindtap="changeColor11"></view>
+          <view class="starsM iconfont icon-weibiaoti-  {{flag2>=2? '': 'hideStar'}}" bindtap="changeColor12"></view>
+          <view class="starsM iconfont icon-weibiaoti-  {{flag2>=3? '': 'hideStar'}}" bindtap="changeColor13"></view>
+          <view class="starsM iconfont icon-weibiaoti-  {{flag2>=4? '': 'hideStar'}}" bindtap="changeColor14"></view>
+          <view class="starsM iconfont icon-weibiaoti-  {{flag2>=5? '': 'hideStar'}}" bindtap="changeColor15"></view>
+        </view>
+      </view>
+      <view class="comment1-description" style="display:flex;flex-direction:row;">
+        <view class="comment1-description1">维修速度</view>
+        <view class="star-pos" style="display:flex;flex-direction:row;">
+          <view class="starsM iconfont icon-weibiaoti-  {{flag2>=1? '': 'hideStar'}}" bindtap="changeColor11"></view>
+          <view class="starsM iconfont icon-weibiaoti-  {{flag2>=2? '': 'hideStar'}}" bindtap="changeColor12"></view>
+          <view class="starsM iconfont icon-weibiaoti-  {{flag2>=3? '': 'hideStar'}}" bindtap="changeColor13"></view>
+          <view class="starsM iconfont icon-weibiaoti-  {{flag2>=4? '': 'hideStar'}}" bindtap="changeColor14"></view>
+          <view class="starsM iconfont icon-weibiaoti-  {{flag2>=5? '': 'hideStar'}}" bindtap="changeColor15"></view>
+        </view>
+      </view>
+      <view class="comment1-description" style="display:flex;flex-direction:row;">
+        <view class="comment1-description1">服务态度</view>
+        <view class="star-pos" style="display:flex;flex-direction:row;">
+          <view class="starsM iconfont icon-weibiaoti-  {{flag2>=1? '': 'hideStar'}}" bindtap="changeColor11"></view>
+          <view class="starsM iconfont icon-weibiaoti-  {{flag2>=2? '': 'hideStar'}}" bindtap="changeColor12"></view>
+          <view class="starsM iconfont icon-weibiaoti-  {{flag2>=3? '': 'hideStar'}}" bindtap="changeColor13"></view>
+          <view class="starsM iconfont icon-weibiaoti-  {{flag2>=4? '': 'hideStar'}}" bindtap="changeColor14"></view>
+          <view class="starsM iconfont icon-weibiaoti-  {{flag2>=5? '': 'hideStar'}}" bindtap="changeColor15"></view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="button">
+    <button class="weui-btn" type="primary">提交</button>
+  </view>
+</view>

@@ -1,0 +1,29 @@
+<!--pages/list/list.wxml-->
+<template name="list">
+  <navigator url="{{url}}?ZT={{ZT}}" class="weui-media-box weui-media-box_appmsg" hover-class="weui-cell_active">
+    <image src='{{bgImg}}' class='bgImg'></image>
+    <view class="weui-media-box__hd weui-media-box__hd_in-appmsg">
+      <!-- <image class="weui-media-box__thumb" src="{{icon60}}" /> -->
+      <view class="">{{BM}}-
+        <text class='name'>{{MZ}}</text>
+      </view>
+      <view class='list_l_b'>{{status}}</view>
+      <view class='list_l'>{{name}}</view>
+    </view>
+    <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
+      <view class="weui-media-box__title">
+        <view style='text-align: right;color:{{color}}'>
+          <text style=";">●</text>
+          <text>{{start}}</text>
+        </view>
+      </view>
+      <view class="weui-media-box__desc">{{time}}</view>
+      <view class="weui-media-box__desc">
+        <button class="weui-btn primary" catchtap='openToast' wx:if="{{ZT==0}}" type="primary" plain="true" size="mini">催单</button>
+        <button class="weui-btn" catchtap='Reminder' type="warn" wx:if="{{ZT==0}}" plain="true" size="mini">撤单</button>
+        <button class="weui-btn" type="warn" wx:if="{{ZT==2}}" plain="true" size="mini">去评价</button>
+        <button class="weui-btn" type="warn" wx:if="{{ZT==3}}" plain="true" size="mini">再次报修</button>
+      </view>
+    </view>
+  </navigator>
+</template>

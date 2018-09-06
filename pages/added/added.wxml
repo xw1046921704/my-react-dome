@@ -1,0 +1,103 @@
+<!--pages/added/added.wxml-->
+<view class="page">
+  <view class="page__hd">
+    <view class="weui-panel weui-panel_access">
+      <navigator url="" class="weui-media-box weui-media-box_appmsg" hover-class="weui-cell_active">
+        <view class="weui-media-box__hd weui-media-box__hd_in-appmsg">
+          <image class="weui-media-box__thumb" src="{{logs.icon}}" />
+        </view>
+        <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
+          <view class="weui-media-box__title">{{logs.name}}</view>
+          <view class="weui-media-box__desc">{{logs.phone}}</view>
+        </view>
+      </navigator>
+    </view>
+  </view>
+  <!-- 中部 -->
+  <view class="page__bd">
+    <view class="weui-cells weui-cells_after-title" style='margin-top:10px'>
+      <view class="weui-cell weui-cell_access">
+        <view class="weui-cell__bd">故障类型</view>
+        <view class="weui-cell__ft" style="font-size: 0">
+          <view style="display: inline-block;vertical-align:middle; font-size: 17px;">无法启动</view>
+          <icon type="info_circle" size="23" color="#F43530" style='margin-left:15px'></icon>
+        </view>
+      </view>
+    </view>
+    <view class='page-input'>
+      <view class="weui-cells__title">故障描述</view>
+      <view class="weui-cells weui-cells_after-title">
+        <view class="weui-cell">
+          <view class="weui-cell__bd">
+            <textarea class="weui-textarea" placeholder="请详细描述设备故障现象" style="height: 3.3em" />
+            <view class="weui-textarea-counter">
+              <image src='../../imag/拍照.png' class='icon' style='padding-right:15px;'></image>
+              <image src='../../imag/麦克风.png' class='icon'></image>
+            </view>
+          </view>
+        </view>
+      </view>
+      <!-- <view class="container">
+        <view class='preview'>
+          <view wx:for="{{imgalist}}" wx:for-item="image" class="previewimg">
+            <image src="{{image}}" data-src="{{image}}" bindtap="previewImage"></image>
+          </view>
+        </view>
+      </view> -->
+      <view class="weui-cells__title">设备位置</view>
+      <view class="weui-cells weui-cells_after-title">
+        <view class="weui-cell">
+          <view class="weui-cell__bd">
+            <textarea class="weui-textarea" placeholder="请详细描述设备位置" style="height: 3.3em" />
+            <view class="weui-textarea-counter">
+              <image src='../../imag/麦克风.png' class='icon'></image>
+            </view>
+          </view>
+        </view>
+      </view>
+      <view class="weui-cells weui-cells_after-title" style='margin-top:10px'>
+        <view class="weui-cell weui-cell_access">
+          <view class="weui-cell__bd">工单类型</view>
+          <view class="weui-cell__ft" style="font-size: 0">
+            <view style="display: inline-block;vertical-align:middle; font-size: 17px;">正常保修</view>
+            <icon type="info_circle" size="23" color="#F43530" style='margin-left:15px'></icon>
+          </view>
+        </view>
+        <view class="weui-cell">
+          <view class="weui-cell__bd">联系人</view>
+          <view class="weui-cell__ft">周大佬</view>
+        </view>
+        <view class="weui-cell">
+          <view class="weui-cell__bd">部门</view>
+          <view class="weui-cell__ft">人事部</view>
+        </view>
+        <view class="weui-cell">
+          <view class="weui-cell__bd">联系电话</view>
+          <view class="weui-cell__ft">0732-6110101</view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <!-- 底部 -->
+  <view class="page__bd">
+    <view class="weui-cell">
+      <view class="weui-cell__bd weui-cells__title s">是否指定维修人员</view>
+      <view class="weui-cell__ft">
+        <switch class="tui-fr" checked="{{isChecked1}}" bindchange="changeSwitch1" />
+        <text>{{Checked1Text}}</text>
+      </view>
+    </view>
+    <view class="weui-cells weui-cells_after-title" wx:if="{{isChecked1}}">
+      <view class="weui-cell weui-cell_access">
+        <view class="weui-cell__bd">维修人员</view>
+        <view class="weui-cell__ft" style="font-size: 0">
+          <view style="display: inline-block;vertical-align:middle; font-size: 17px;">陈小胖</view>
+          <icon type="info_circle" size="23" color="#F43530" style='margin-left:15px'></icon>
+        </view>
+      </view>
+    </view>
+    <view class="button">
+        <button class="weui-btn" type="primary">申请保修</button>
+    </view>
+  </view>
+</view>

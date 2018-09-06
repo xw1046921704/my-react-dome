@@ -1,0 +1,50 @@
+/* pages/evaluate/evaluate.wxss */
+.page__ft{
+  background: #fff;
+}
+.comment1-description {
+  margin-top: 10rpx;
+}
+.s{
+  padding: 20px 8px;
+}
+.comment1-description1 {
+  font-family: PingFangSC-Regular;
+  font-size: 36rpx;
+  color: #333;
+  margin-left: 0rpx;
+}
+
+.star-pos {
+  position: absolute;
+  right: 0px;
+  margin-right: 150rpx;
+}
+
+.comment1-description {
+  line-height: 40px;
+  margin-left: 20px;
+}
+
+.comment1-description .star-pos .hideStar {
+  z-index: 2;
+  color: #999;
+  font-size: 75rpx;
+}
+
+.starsM {
+  z-index: 1;
+  color: rgb(255, 239, 100);
+  font-size: 75rpx;
+}
+
+.icon {
+  width: 32px;
+  height: 32px;
+  vertical-align: middle;
+  display: inline-block;
+}
+.button{
+  width: 90%;
+  margin: 30px auto;
+}

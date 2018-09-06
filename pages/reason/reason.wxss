@@ -1,0 +1,10 @@
+/* pages/reason/reason.wxss */
+page{
+  background-color: #fff;
+}
+.weui-grid__icon{
+  display: none;
+}
+.weui-grid{
+  width: 50%;
+}

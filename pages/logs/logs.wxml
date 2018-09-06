@@ -1,0 +1,24 @@
+<!--logs.wxml-->
+<import src="../grids/grids.wxml" />
+<view class="page">
+  <image class='imag' src='../../imag/303490796.jpg'></image>
+
+    <view class="weui-panel weui-panel_access">
+      <navigator url="" class="weui-media-box weui-media-box_appmsg" hover-class="weui-cell_active">
+        <view class="weui-media-box__hd weui-media-box__hd_in-appmsg">
+          <image class="weui-media-box__thumb" src="{{logs.icon}}" />
+        </view>
+        <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
+          <view class="weui-media-box__title">{{logs.name}}</view>
+          <view class="weui-media-box__desc">{{logs.phone}}</view>
+        </view>
+      </navigator>
+  </view>
+  <view class="container">
+    <view class="weui-grids">
+      <view class="weui-grid" bindtap='a' wx:for="{{routers}}" wx:key="name">
+        <template is="grids" data="{{...item}}"></template>
+      </view>
+    </view>
+  </view>
+</view>

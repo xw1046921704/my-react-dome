@@ -1,0 +1,136 @@
+/**index.wxss**/
+.swiper {
+  height: 300rpx;
+  width: 100%;
+}
+
+.swiper image {
+  height: 100%;
+  width: 100%;
+}
+
+.container {
+  background-color: #fff;
+}
+
+.weui-grid {
+  width: 33.33%;
+}
+
+.weui-search-bar {
+  background: #fff;
+  border-bottom: none;
+}
+
+.weui-search-bar__label {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.weui-grid__icon {
+  width: 50px;
+  height: 50px;
+}
+
+.imagSize {
+  width: 50px;
+  height: 50px;
+}
+
+.weui-grids {
+  border: none;
+}
+
+.weui-grid {
+  border-bottom: 1rpx solid #d9d9d9;
+  border-right: 0cm;
+}
+
+.weui-panel {
+  margin-top: 0px;
+}
+
+.name {
+  font-size: 15px;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.page__ft {
+  border-bottom: solid 0.1px rgb(177, 184, 177);
+  border-top: solid 0.1px rgb(177, 184, 177);
+}
+
+.weui-panel__bd {
+  border-bottom: solid 0.1px rgb(177, 184, 177);
+  border-top: solid 0.1px rgb(177, 184, 177);
+}
+
+.weui-panel__bd navigator {
+  height: 132px;
+}
+
+.weui-media-box {
+  padding: 0px 15px 15px 15px;
+}
+
+.weui-media-box_appmsg {
+  font-size: 15px;
+}
+
+.weui-media-box__hd_in-appmsg {
+  width: 45%;
+  height: auto;
+  line-height: normal;
+  text-align: start;
+}
+
+.weui-media-box__hd_in-appmsg view {
+  margin: 5px;
+}
+
+.list_l {
+  font-size: 15px;
+  color: rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.list_l_b {
+  font-size: 13px;
+  color: rgba(0, 0, 0, 0.9);
+}
+
+.weui-media-box__title {
+  font-size: 15px;
+  padding-top: 20px;
+}
+
+.weui-media-box__desc {
+  text-align: right;
+  margin-top: 5px;
+}
+
+.weui-media-box__desc button {
+  margin-left: 10px;
+}
+
+.primary {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.weui-panel__bd navigator {
+  z-index: 1;
+}
+
+.bgImg {
+  position: absolute;
+  z-index: -100;
+  width: 44px;
+  height: 44px;
+  top: 0px;
+  right: 10px;
+}
+
+.hide {
+  display: none;
+}
